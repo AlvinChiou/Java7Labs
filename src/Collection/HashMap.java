@@ -6,6 +6,7 @@ public class HashMap {
         map.put("1", new Integer(109));
         map.put("2", "Two");
         map.put("3", new Float(59.8));
+        map.put("3",new Float(70.1)); //覆蓋掉原有的值 59.8
 
         Set set = map.keySet(); //取出所有Key, 包裝為 Set 型態
 
