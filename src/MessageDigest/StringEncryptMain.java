@@ -1,5 +1,4 @@
 package MessageDigest;
-
 public class StringEncryptMain {
     public static void main(String[] args) {
         StringEncrypt se = new StringEncrypt();
