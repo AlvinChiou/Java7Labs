@@ -9,7 +9,7 @@ public class StringEncryptMain {
         System.out.println("被加密後的資料為:" + se.getEncryptData());
         //直接將se.getEncryptData()傳回的資料寫入資料庫就實現資料庫密碼加密囉!!
 
-        if (se.getEncryptData()==DataBasePassword){
+        if (se.getEncryptData().equals(DataBasePassword)){
             System.out.println("密碼相符，允許登入");
         }else{
             System.out.println("密碼不符!");
