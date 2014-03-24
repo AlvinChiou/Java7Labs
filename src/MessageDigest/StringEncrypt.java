@@ -7,7 +7,7 @@ class StringEncrypt {
         this.str = str;
         MessageDigest sha = null;
         try {
-            //如果要改用MD5或SHA-256請直接將以下"SHA-1"替換即可
+            //如果要改用MD5或SHA-256請直接將以下"SHA-1"替換即可，其餘不必修改!
             sha = MessageDigest.getInstance("SHA-1");
             sha.update(str.getBytes());
         } catch (Exception e) {
