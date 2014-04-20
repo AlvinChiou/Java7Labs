@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="itext-1.1.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/jar/itext-1.1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jar/itext-rups-2.1.3.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jar/jdtaus-editor-client-application-1.0-beta-10.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jar/PDFRenderer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
