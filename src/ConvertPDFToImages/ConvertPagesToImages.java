@@ -1,8 +1,4 @@
-package PDFtoImg;
-
-/**
- * Created by Alvin on 2014/4/21.
- */
+package ConvertPDFToImages;
 
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -12,17 +8,18 @@ import java.io.File;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-
 import javax.imageio.ImageIO;
-
 import com.sun.pdfview.PDFFile;
 import com.sun.pdfview.PDFPage;
-
-public class ConvertPagesToImages {
-    public static void main(String[] args) {
+class ConvertPagesToImages {
+    String sourceDir;
+    String destinationDir;
+    public void ConvertPagesToImages(String sourceDir, String destinationDir){
+        this.sourceDir = sourceDir;
+        this.destinationDir = destinationDir;
         try {
-            String sourceDir = "H:/PDFCopy/Google-Mapreduce.pdf";// PDF file must be placed in DataGet folder
-            String destinationDir = "H:/PDFCopy/Converted/";//Converted PDF page saved in this folder
+            //sourceDir = "H:/PDFCopy/Google-Mapreduce.pdf";// PDF file must be placed in DataGet folder
+            //destinationDir = "H:/PDFCopy/Converted/";//Converted PDF page saved in this folder
 
             File sourceFile = new File(sourceDir);
             File destinationFile = new File(destinationDir);
@@ -70,4 +67,5 @@ public class ConvertPagesToImages {
             e.printStackTrace();
         }
     }
+
 }
